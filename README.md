@@ -6,6 +6,7 @@ Tchain will allow you to navigate back in your terminal history ...
 
 Allowing you to paste and execute the new one-liner or assign it to an alias or function.
 ## Setup for Bats Bash Test Suite (used by this project)<br/>Ignore if you do not want to run the tests.
+For more information about bats: https://github.com/sstephenson/bats
 ```bash
 cd ~;
 startingFolderLocation=$OLDPWD &&
