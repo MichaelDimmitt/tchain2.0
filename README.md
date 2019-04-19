@@ -3,17 +3,25 @@
 ## tchain2.0
 Now knowing bash ... lets try this again 🙂. Terminal chaining.
 
-Plan for getting it done ... 
-When you up arrow to the thing you want user will put the function at the beginning.
-<br/>The command that you were on that is now after the function tchain will now be passed into the function.
-<br/>Additionally `~NUM`, or just `~` can be passed in to chain commands previous to that command in history.
-<br/>The function sanitizes the command of `;` and `~` without harming commands that actually need those characters.
-<br/>If multiple commands are found they will all be listed with the line numbers and prompt which line to do the chaining.
+## Plan for getting it done ... 
+When User "up arrow"s in terminal to the thing they want in terminal history, 
+
+User will put the tchain function at the beginning of the command they are seeing.
+
+The command that you were on that is now after the function tchain and is passed into the tchain function as parameters.
+
+Additionally `~NUM`, or just `~` can be passed in to chain commands previous to that command in history.
+
+The function sanitizes the command of `;` and `~` without harming commands that actually need those characters.
+
+If multiple commands are found they will all be listed with the line numbers and prompt which line to do the chaining.
+
 Finally, upon success ... the command in oneline fashion is echoed to the user as a built string.
 
+## Payoff
 User can now assign that one-liner to an alias a function or just paste it below for the desired result. 🙂
 
-Example Function Calls:
+## Example Function Calls:
 ```bash 
 # Call tchain without tilda ... for command plus previous command chained.
 tchain git pull 
