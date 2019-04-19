@@ -4,7 +4,7 @@ Note about the implementation: The solution is echoed to user not auto executed.
 Tchain will allow you to navigate back in your terminal history ... 
 <br/>And chain commands you repeat together often into a single bash one-liner.
 
-Allowing you to paste and execute the new one-liner or assign it to an alias a function.
+Allowing you to paste and execute the new one-liner or assign it to an alias or function.
 ## Setup for Bats Bash Test Suite (used by this project)<br/>Ignore if you do not want to run the tests.
 ```bash
 cd ~;
