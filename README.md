@@ -1,7 +1,21 @@
 ## TChain!!! …
 
 ## tchain2.0
-Now knowing bash ... lets try this again 🙂. Terminal chaining.
+
+## Why this command is useful:
+Tchain will allow you to navigate back in your terminal history ... 
+<br/>And chain commands you repeat together often into a single bash one-liner.
+
+Allowing you to paste and execute the new one-liner or assign it to an alias a function.
+## Setup for Bats Bash Test Suite (used by this project) Ignore if you do not want to run the tests.
+```bash
+cd ~;
+startingFolderLocation=$OLDPWD &&
+git clone https://github.com/sstephenson/bats.git &&
+cd bats &&
+./install.sh /usr/local &&
+cd $startingFolderLocation
+```
 
 ## Plan for getting it done ... 
 When User "up arrow"s in terminal to the thing they want in terminal history, 
