@@ -25,11 +25,11 @@ User can now assign that one-liner to an alias a function or just paste it below
 ```bash 
 # Call tchain without tilda ... for command plus previous command chained.
 tchain git pull 
-result: git pull
+result: 'git pull'
 
 # Call tchain with tilda at the end and semicolins handled ... for command plus previous command chained.
 tchain git pull ~;;;
-result: git status; git pull;
+result: 'git status; git pull;'
 
 # if multiples are found, tchain with tilda example: 
 
@@ -52,7 +52,7 @@ result: 'cd ..; git pull'
 
 # Call tchain with tilda at the beginning ... for command plus previous 3 commands chained.
 tchain ~3 git pull
-result: cd ..; cd example_repo; git status; git pull;
+result: 'cd ..; cd example_repo; git status; git pull;'
 ```
 
 UserFlow #1
