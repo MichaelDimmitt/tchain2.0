@@ -1,7 +1,5 @@
-## TChain!!! …
-
-## tchain2.0
-
+## TChain!!! ...  tchain2.0, chain a string of previous commands into a bash oneliner
+Note about the implementation: The solution is echoed to user not auto executed.
 ## Why this command is useful:
 Tchain will allow you to navigate back in your terminal history ... 
 <br/>And chain commands you repeat together often into a single bash one-liner.
