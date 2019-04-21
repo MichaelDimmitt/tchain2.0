@@ -16,6 +16,11 @@ sudo ./install.sh /usr/local &&
 cd $startingFolderLocation
 ```
 
+## Run tests in the test folder:
+```bash
+bats test
+```
+
 ## Plan for getting it done ... 
 When User "up arrow"s in terminal to the thing they want in terminal history, 
 
