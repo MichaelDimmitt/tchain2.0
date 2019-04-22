@@ -39,14 +39,25 @@ Finally, upon success ... the command in oneline fashion is echoed to the user a
 ## Payoff
 User can now assign that one-liner to an alias a function or just paste it below for the desired result. 🙂
 
+## EdgeCase, future to do:
+space is enforced but if space is not enforced I need to resolve the following edge condition.
+```
+begin difficult down the road solution:
+user ... tchained something with ... ~ at the end and no space.
+step1) try the history grep but if it returned zero results ... if found tell user found so no ~ passed;i otherwise try step 2 ...
+step2) strip the ~ and mention they may have typed incorrectly ... or ... run tchain with space ~{num}
+end difficult down the road solution.
+```
 ## Example Function Calls:
 ```bash 
+## Another Case worth Mentioning:
+
 # Call tchain without tilda ... for command plus previous command chained.
 tchain git pull 
 result: 'git pull'
 
 # Call tchain with tilda at the end and semicolins handled ... for command plus previous command chained.
-tchain git pull ~;;;
+tchain git pull ;;; ~
 result: 'git status; git pull;'
 
 # if multiples are found, tchain with tilda example: 
@@ -142,19 +153,20 @@ tchain(){
 
   # Test 6:
   ## regex to match out ending ~NUM.
-  # tchain git pull~3
+  # tchain git pull ~3
   # expected: 'cd ..; cd tchain_repo; git status; git pull;
   
   # Test 7:
   ## regex to match out ~ without NUM.
-  # tchain git pull~
+  # tchain ~ git pull
   # expected: 'git status; git pull'
   
   # Test 8: 
   ## Multiple history items found an error message is returned.
 	## If more than one line returned … prompt user options and tell them they can use line number.
-  # tchain git pull~;
-  # tchain git pull~;;;;
+  # tchain git pull; ~
+  # tchain git pull;; ~;;
+  # tchain git pull;;;; ~
   # expected: 'git status; git pull'
   
 #### end Describe
