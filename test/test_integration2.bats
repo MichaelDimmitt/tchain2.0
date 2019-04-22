@@ -15,6 +15,26 @@ load 'helpers';
 ## 8: vi text.txt
 ## 9: vi te
 
+# tchain(){
+#   main history $*
+# }
+# 
+# fchain(){
+#   filename=$1
+#   shift
+#   main $(cat filename) $*
+# }
+#
+# example call
+# fchain $file git add .
+# 
+# main(){
+# command=$1
+# shift
+# ## if first or last is ... ~value ... tchain!!!
+# $command | grep $*
+# }
+
 res(){
   echo "$1 $(echo "$1" | wc -l )" | tr -d '\n'
 }
