@@ -1,7 +1,7 @@
 ##### Superflous Tests
 load 'helpers';
 res(){
-  echo "$1 $(echo "$1" | wc -l )" | tr -d '\n'
+  echo "$1 $(( $(echo "$1" | wc -l ) - 2 ))" | tr -d '\n'
 }
 
 ########## Superflous Tests .......
