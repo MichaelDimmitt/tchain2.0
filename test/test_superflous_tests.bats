@@ -39,9 +39,9 @@ file=$BATS_TEST_DIRNAME/mock_history.sh
 
   expect=$(res "
     8091  rm text.txt
-8093  rm text.txt
-8097  rm text.txt
-8102  rm text.txt
+ 8093  rm text.txt
+ 8097  rm text.txt
+ 8102  rm text.txt
   ")
   assert_equal "$result" "$expect"
 }
@@ -52,13 +52,13 @@ file=$BATS_TEST_DIRNAME/mock_history.sh
 ")
   expect=$(res "
     8089  vi text.txt
-8090  vi text.txt
-8092  vi text.txt
-8094  vi text.txt
-8095  vi text.txt
-8096  vi text.txt
-8098  vi text.txt
-8099  vi text.txt
+ 8090  vi text.txt
+ 8092  vi text.txt
+ 8094  vi text.txt
+ 8095  vi text.txt
+ 8096  vi text.txt
+ 8098  vi text.txt
+ 8099  vi text.txt
  ")
   assert_equal "$result" "$expect"
 }
@@ -69,14 +69,14 @@ $(cat $file | grep 'vi te')
 ")
   expect=$(res "
 8089  vi text.txt
-8090  vi text.txt
-8092  vi text.txt
-8094  vi text.txt
-8095  vi text.txt
-8096  vi text.txt
-8098  vi text.txt
-8099  vi text.txt
-8101  vi te
+ 8090  vi text.txt
+ 8092  vi text.txt
+ 8094  vi text.txt
+ 8095  vi text.txt
+ 8096  vi text.txt
+ 8098  vi text.txt
+ 8099  vi text.txt
+ 8101  vi te
 ")
   assert_equal "$result" "$expect"
 }
